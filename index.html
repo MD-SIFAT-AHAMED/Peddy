@@ -6,10 +6,105 @@
     <!-- Daisy Ui & Tailwind Css Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
-    <title>Retro Forum</title>
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Peddy</title>
 </head>
+
 <body>
-    
+    <header class="max-w-screen-2xl mx-auto mt-5 px-4 lg:px-36">
+        <!-- Navber section -->
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img class="w-7 h-7" src="images/logo.webp" alt="logo-img">
+                <span class="text-3xl font-semibold">Peddy</span>
+            </div>
+            <div class="text-lg hidden md:block space-x-4 mr-20">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="border-1 py-3 px-4 rounded-[100%]">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+
+    </header>
+    <main class="max-w-screen-2xl mx-auto px-4 lg:px-36 mt-5">
+        <!-- Banner section -->
+        <section class="flex flex-col justify-center items-center space-y-4 my-10">
+            <p class="text-2xl text-[#13131360]">
+                Bringing Families Together ❤️‍🔥 
+            </p>
+            <h3 class="text-5xl md:text-7xl text-center  font-semibold">
+                Your Path to Adoption <br> Starts Here
+            </h3>
+            <p class="text-base text-center text-[#131313]">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking <br class="hidden md:block">at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+            <button class="btn rounded-md hover:bg-[#0E7A81] hover:text-white">View More</button>
+            <figure>
+                <img src="images/pet.webp" alt="banner-img">
+            </figure>
+            <p class="text-3xl md:text-5xl text-center text-[#131313]">
+                Adopt  Your Best Friend
+            </p>
+            <p class="text-base text-center text-[#13131370]">
+                It is a long established fact that a reader will be distracted by the readable content of a <br class="hidden md:block">page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+        </section>
+
+        <!-- All Peddy Button -->
+        <section class="mb-10">
+            <div id="peddyButton" class="flex flex-wrap justify-center items-center gap-2">  
+
+            </div>
+        </section>
+        
+        <section class="mb-10">
+            <div class="text-center space-y-4 md:flex justify-between items-center my-4 ">
+                <h4 class="text-2xl font-semibold">Best Deal For you</h4>
+                <div>
+                    <button class="btn rounded-lg text-[#0E7A81] hover:text-white px-10 py-6 hover:bg-[#0E7A81] text-base">Sort by Price</button>
+                </div>
+            </div>
+
+            <div class="md:flex gap-4">
+                <!-- All Peddy Card -->
+                <div class="sm:w-[80%]">
+                    
+                   <div class="flex justify-center md:justify-between">
+                        <div id="peddyCart" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                        
+                        </div>
+                   </div>
+                   <!-- No Information Available section -->
+                   <div id="noInformation">
+                        <div class="flex flex-col justify-center items-center space-y-3 text-center">
+                            <img src="images/error.webp" alt="error-img">
+                            <h3 class="text-3xl font-semibold text-[#131313]">No Information Available</h3>
+                            <p class="text-[#13131370]">
+                                It is a long established fact that a reader will be distracted by the readable content of a page   when looking at <br> 
+                                its layout. The point of using Lorem Ipsum is that it has a.
+                            </p>
+                        </div>
+                   </div>
+                </div>
+                <!-- All peddy Photos -->
+                <div class="sm:w-[20%]">
+                    
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
 </body>
 </html>
